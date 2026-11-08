@@ -59,50 +59,66 @@ FINANCifyME/
 └── README.md
 ```
 
-🚀 Getting Started
-Prerequisites
-Node.js (v18+ recommended)
-PostgreSQL database running locally or hosted (e.g., Supabase, Neon, Render)
-1. Clone the Repository
-git clone [https://github.com/hasankf/FINANCifyME.git](https://github.com/hasankf/FINANCifyME.git)
-cd FINANCifyME
+---
 
-2. Backend Setup
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js** (v18 or higher recommended)
+- **PostgreSQL** database (Local, Supabase, or Neon)
+
+---
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/hasankf/FINANCifyME.git
+cd FINANCifyME
+```
+### Step 2: Setting up the Backend
+```bash
 cd backend
 npm install
 
-Create a .env file inside the backend/ directory:
 PORT=5000
 DATABASE_URL=postgres://postgres:yourpassword@localhost:5432/financifyme
 JWT_SECRET=your_jwt_secret_key
 GEMINI_API_KEY=your_google_gemini_api_key
 
-Run database setup & seed demo data:
+```
+### Step 3 (optional): Seed the database with a 12month realistic data 
+
+```
 npm run seed
-
-Start the backend server:
 npm start
-# or for development
-npm run dev
+```
 
-3. Frontend Setup
-In a new terminal window:
+### Step 4: Setting up the Frontend
+```
 cd frontend
 npm install
 
-Create a .env file inside the frontend/ directory:
 VITE_API_BASE_URL=http://localhost:5000/api
 
-Start the frontend development server:
 npm run dev
+```
 
-🔑 Demo Login Credentials
-Once the seed script (npm run seed) has been executed, you can immediately log into the application using:
-Email: hasan@gmail.com
-Password: h12345
-🔐 Security Note
-Never commit your .env file or GCP/Gemini API keys to Git.
-Always ensure .env and node_modules are included in your .gitignore file before pushing updates.
-👨‍💻 Author
+## 🔑 Demo Login Credentials
 
-Hasan Kamaal - @hasankf
+Once the seed script (`npm run seed`) has been executed, you can immediately log into the application using:
+
+* **Email:** `hasan@gmail.com`
+* **Password:** `h12345`
+
+---
+
+## 🔐 Security Note
+
+* Never commit your `.env` file or GCP/Gemini API keys to Git.
+* Always ensure `.env` and `node_modules` are included in your `.gitignore` file before pushing updates.
+
+---
+
+## 👨‍💻 Author
+
+* **Hasan Kamaal** - [@hasankf](https://github.com/hasankf)
