@@ -57,7 +57,7 @@ FINANCifyME/
 │
 ├── .gitignore             # Configured to exclude .env and node_modules
 └── README.md
-
+```
 
 🚀 Getting Started
 Prerequisites
