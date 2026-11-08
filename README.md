@@ -109,7 +109,7 @@ Once the seed script (`npm run seed`) has been executed, you can immediately log
 
 * **Email:** `hasan@gmail.com`
 * **Password:** `h12345`
-
+* **Deployment Link: ** `https://finan-cify-me.vercel.app/login`
 ---
 
 ## 🔐 Security Note
