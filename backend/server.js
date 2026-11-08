@@ -28,6 +28,9 @@ app.use("/api/budgets", budgetRoutes) ;
 app.use("/api/dashboard", dashboardRoutes) ;
 app.use("/api/insights", insightsRoutes) ;
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+export default app;
+// Only start the local port listener when NOT running on Vercel
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
